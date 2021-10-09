@@ -12,18 +12,19 @@
 </head>
 <body>
     <header>
-        <h1>Pogodynka</h1>
+        <h1 class="text-center py-3">Pogodynka</h1>
     </header>
-    <main>
+    <main class="pb-5">
         <div class="container">
-            <div class="row">
-                <div class="main-info">
-                        <div>
-                            <h3 class="city-name"></h3>
-                            <input type="text" placeholder="Wpisz nazwę miasta..."><button>Wyślij</button>
-                            <p class="warning"></p>
-                        </div>
-                        <img src="./img/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo">
+            <div class="row h-100 d-flex flex-column">
+                <div class="main-info col-12 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="my-4">
+                        <h3 class="city-name"></h3>
+                        <input class="form-control form-control-md" type="text" placeholder="Wpisz nazwę miasta...">
+                        <button class="btn my-3">Potwierdź</button>
+                        <p class="warning">bhj</p>
+                    </div>
+                    <img src="/dist/images/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo">
                 </div>
                 <div class="bottom col-12">
                     <div class="headings">
@@ -31,7 +32,7 @@
                         <p>Temperature:</p>
                         <p>Humidity:</p>
                     </div>
-                    <div class="weather-info">
+                    <div class="weather-info  d-flex justify-content-center align-items-center">
                         <p class="weather"></p>
                         <p class="temperature"></p>
                         <p class="humidity"></p>
