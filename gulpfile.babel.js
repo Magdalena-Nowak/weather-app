@@ -3,7 +3,7 @@ const sass = require("gulp-sass")(require("sass"));
 sass.compiler = require("node-sass");
 const babel = require("gulp-babel");
 const cssnano = require("gulp-cssnano");
-const beautify = require('gulp-beautify');
+const beautify = require("gulp-beautify");
 const autoprefixer = require("gulp-autoprefixer");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
@@ -11,7 +11,7 @@ const imagemin = require("gulp-imagemin");
 const sourcemaps = require("gulp-sourcemaps");
 const clean = require("gulp-clean");
 const kit = require("gulp-kit");
-const htmlmin = require("gulp-htmlmin");
+// const htmlmin = require("gulp-htmlmin");
 // const ghPages = require("gulp-gh-pages");
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
@@ -66,7 +66,7 @@ function minify(cb) {
 function handleKits(cb) {
   src(paths.html)
     .pipe(kit())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest("./"));
   cb();
 }
