@@ -1,49 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 62.5%;
-    color: beige;
-    height: 100%;
-    background-color: #A9C9FF;
-background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
-background-repeat: no-repeat;
-background-size: cover;
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  color: beige;
+  min-height: 100vh;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  font-size: 1.1rem;
 }
 
 h1 {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .container {
-    min-height: 60vh;
-    background-color: rgba(0,0,0,0.8);
-    // border-bottom: 0.1rem solid beige;
-    // border-right: 0.1rem solid beige;
-    border-radius: 2rem;
-    box-shadow: 5px 5px 15px -2px #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2rem;
+  box-shadow: 0px 0px 50px 10px #ffffff;
 }
 
 .photo {
-    width: 15rem;
-    height: 8rem;
-    object-fit: cover;
+  width: 15rem;
+  height: 8rem;
+  object-fit: cover;
 }
 
 .btn {
-    cursor: pointer;
-    color: beige;
-    box-shadow: 5px 5px 15px -5px #FFFFFF;
-    border-radius: 1rem;
-    font-weight: 600;
-    transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  color: beige;
+  box-shadow: 0px 0px 10px 1px #ffffff;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: all 0.6s ease-in-out;
 }
 
 .btn:hover {
-    color: rgba(0,0,0,0.8);
-    background-color: rgb(255, 255, 255);;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(255, 255, 255);
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 552px) {
+  .form-control {
+    width: 60%;
+  }
+}
+.weather-info > p {
+  margin: 0;
+}
+
+.weather-info {
+  margin: 0.5rem 0;
+}
+
+.weather-info__type {
+  font-weight: bolder;
+  border-bottom: 0.1rem solid white;
 }

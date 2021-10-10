@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3710696c33.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/style.min.css">
     <title>Pogodynka</title>
 </head>
+
 <body>
     <header>
-        <h1 class="text-center py-3">Pogodynka</h1>
+        <h1 class="text-center my-5">Pogodynka</h1>
     </header>
-    <main class="pb-5">
-        <div class="container">
-            <div class="row h-100 d-flex flex-column">
-                <div class="main-info col-12 d-flex flex-column flex-md-row justify-content-between align-items-center">
-                    <div class="my-4">
-                        <h3 class="city-name"></h3>
-                        <input class="form-control form-control-md" type="text" placeholder="Wpisz nazwę miasta...">
-                        <button class="btn my-3">Potwierdź</button>
-                        <p class="warning">bhj</p>
+    <main>
+        <div class="container col-12 col-md-6 col-xl-5 py-4">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="main-info col-12">
+                    <div class="d-flex flex-column flex-xl-row align-items-center justify-content-center flex-xl-wrap">
+                        <h3 class="city-name text-center my-2"></h3>
+                        <input class="form-control my-2" type="text" placeholder="Wpisz nazwę miasta...">
+                        <button class="btn my-3 mx-xl-4">Potwierdź</button>
+                        <p class="badge badge-warning text-center my-2 px-2"></p>
                     </div>
-                    <img src="/dist/images/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo">
+                    <div class="photo-wrapper d-flex align-items-center justify-content-center">
+                        <img src="/dist/images/unknown.png" alt="Obrazek przedstawiający pogodę" class="photo">
+                    </div>
                 </div>
-                <div class="bottom col-12">
-                    <div class="headings">
-                        <p>Weather:</p>
-                        <p>Temperature:</p>
-                        <p>Humidity:</p>
-                    </div>
-                    <div class="weather-info  d-flex justify-content-center align-items-center">
+                <div class="bottom-info col-10 d-flex justify-content-between align-items-center flex-wrap my-2">
+                    <div class="weather-info weather-info--weather">
+                        <p class="weather-info__type">Pogoda</p>
                         <p class="weather"></p>
+                    </div>
+                    <div class="weather-info weather-info--temperature">
+                        <p class="weather-info__type">Temperatura</p>
                         <p class="temperature"></p>
+                    </div>
+                    <div class="weather-info weather-info--humidity">
+                        <p class="weather-info__type">Wilgotność</p>
                         <p class="humidity"></p>
                     </div>
                 </div>
@@ -42,7 +49,10 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" text-center
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        crossorigin="anonymous"></script>
     <script src="../dist/js/app.min.js"></script>
 </body>
+
 </html>
