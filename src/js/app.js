@@ -11,7 +11,7 @@ const wind = document.querySelector(".wind");
 const API_LINK = "http://api.openweathermap.org/data/2.5/weather?q=";
 const API_KEY = "&appid=e2ae453678cc7a9c9e2f0267a7df42e7";
 const API_UNITS = "&units=metric";
-const API_LANG = "&lang=pl"
+const API_LANG = "&lang=pl";
 
 const getWeather = () => {
   const city = input.value || "Warszawa";
@@ -26,9 +26,9 @@ const getWeather = () => {
     cityName.textContent = res.data.name;
     temperature.textContent = Math.floor(temp) + " °C";
     humidity.textContent = hum + " %";
-    wind.textContent = `${win * 3.6} km/h`;
+    wind.textContent = `${Math.floor(win * 3.6)} km/h`;
     weather.textContent = weath;
   });
 };
 
-getWeather();
+button.addEventListener("click", getWeather);
