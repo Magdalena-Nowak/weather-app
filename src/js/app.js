@@ -47,6 +47,7 @@ const getWeather = () => {
       } else if (weatherId >= 802 && weatherId <= 804) {
         photo.setAttribute("src", "/dist/images/clouds.png");
       }
+      warning.textContent = "";
     })
     .catch(() => (warning.textContent = "Wpisz poprawną nazwę miasta!"));
 };
