@@ -16,11 +16,15 @@ body {
 }
 
 main {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 h1 {
   font-weight: bolder;
+}
+
+.badge {
+  font-size: 1.2rem;
 }
 
 .container {
@@ -30,9 +34,13 @@ h1 {
 }
 
 .photo {
-  width: 20rem;
-  height: 12rem;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.photo-wrapper {
+  height: 20vh;
 }
 
 .btn {
